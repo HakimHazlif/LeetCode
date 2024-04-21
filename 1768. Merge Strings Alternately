@@ -19,7 +19,7 @@ class Solution(object):
 
 
 so = Solution()
-so.mergeAlternately("abc", "pqr")
-so.mergeAlternately("ab", "pqrs") 
+#so.mergeAlternately("abc", "pqr")
+#so.mergeAlternately("ab", "pqrs") 
 so.mergeAlternately(abcd, "pq")
 
