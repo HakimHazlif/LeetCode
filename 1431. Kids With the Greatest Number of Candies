@@ -1,0 +1,27 @@
+class Solution(object):
+    def kidsWithCandies(self, candies, extraCandies):
+
+      outer = []
+      i = 0
+      while i < len(candies):
+        child = candies[i] + extraCandies
+
+        true = 0
+        for chil in candies:
+          if child >= chil:
+            true += 1
+
+        if true == len(candies):
+          outer.append(True)
+        else:
+          outer.append(False)
+
+        i += 1
+
+      return outer
+
+
+so = Solution()
+#so.kidsWithCandies([2,3,5,1,3], 3)
+#so.kidsWithCandies([4,2,1,1,2], 1)
+so.kidsWithCandies([12,1,12], 10)
