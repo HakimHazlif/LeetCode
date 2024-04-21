@@ -1,0 +1,25 @@
+class Solution(object):
+    def mergeAlternately(self, word1, word2):
+
+        merger = []
+        i = 0
+        while i < len(word1) or i < len(word2):
+          if i < len(word1) and i < len(word2):
+            merger.append(word1[i])
+            merger.append(word2[i])
+          elif i < len(word1) and i >= len(word2):
+            merger.append(word1[i])
+          elif i >= len(word1) and i < len(word2):
+            merger.append(word2[i])
+          i += 1
+
+        output = "".join(merger)
+
+        return output
+
+
+so = Solution()
+so.mergeAlternately("abc", "pqr")
+so.mergeAlternately("ab", "pqrs") 
+so.mergeAlternately(abcd, "pq")
+
