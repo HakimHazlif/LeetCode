@@ -19,9 +19,3 @@ class Solution(object):
         i += 1
 
       return outer
-
-
-so = Solution()
-#so.kidsWithCandies([2,3,5,1,3], 3)
-#so.kidsWithCandies([4,2,1,1,2], 1)
-so.kidsWithCandies([12,1,12], 10)
