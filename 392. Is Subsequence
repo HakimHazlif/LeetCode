@@ -15,8 +15,3 @@ class Solution(object):
       else:
         return False
 
-        
-s = "abc"
-t = "ahbgdc"
-so = Solution()
-so.isSubsequence(s, t)
